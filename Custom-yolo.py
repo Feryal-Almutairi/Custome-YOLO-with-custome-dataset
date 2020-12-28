@@ -6,7 +6,7 @@ confThresholold = 0.25
 nsmThresholold = 0.40
 inpWidth = 416
 inpHeight = 416
-classesFile = "C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/obj.names"
+classesFile = "C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/obj.names" 
 classes = None
 
 with open(classesFile,'rt') as f :
