@@ -6,15 +6,15 @@ confThresholold = 0.25
 nsmThresholold = 0.40
 inpWidth = 416
 inpHeight = 416
-classesFile = "C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/obj.names" 
+classesFile = "C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/obj.names" # add extension of .names file for custom dataset 
 classes = None
 
 with open(classesFile,'rt') as f :
     classes =f.read().rstrip('\n').split('\n')
 
 
-modelConf='C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/yolo-obj.cfg'
-modelWeights='C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/yolo-obj.weights'
+modelConf='C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/yolo-obj.cfg' # add extension of configuration file for custom YOLO model
+modelWeights='C:/Users/LENOVO/Downloads/Doors/DoorDetect-Dataset-master/yolo-obj.weights' # add extension of weights file for custom YOLO model
 
 def postprocess(frame, outs):
     frameHeight=frame.shape[0]
